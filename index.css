@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #searchArea {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #error-message {
+      color: red;
+  }
+  
+  .hidden {
+    display: none;
+  }

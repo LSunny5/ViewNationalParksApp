@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View National Parks in a State</title>
+    <meta name="description" content="Team is working on app that helps plan vacations, this app and page specifically looks and finds all the national parks in various states the user has specified.">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>View National Parks in an Area</h1>
+
+        <form>
+            <label for="search">Please enter the state abbreviations you would like to search (seperated by commas):</label>
+            <input type="text" name="search" id="searchArea" placeholder="nj, ny, ca..." required>
+            <br>
+            <br>
+            <label for="max-results">Please enter the maximum numbers of results to return:  </label>
+            <input type="number" name="max-results" id="maxResults" value="10" min="1">
+            <br>
+            <br>
+            <button type="submit">Find my Parks!</button>
+        </form>
+        <p id="error-message"></p>
+
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list"></ul>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
